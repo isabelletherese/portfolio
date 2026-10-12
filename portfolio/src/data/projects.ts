@@ -8,6 +8,18 @@ export type Project = {
   demoUrl: string | null
 }
 
+export const filterTags = [
+  'Alla',
+  'JavaScript',
+  'HTML',
+  'SCSS',
+  'TypeScript',
+  'Node.js',
+  'MySQL',
+  'MongoDB',
+  'React',
+]
+
 export const projects: Project[] = [
   {
     id: 1,
