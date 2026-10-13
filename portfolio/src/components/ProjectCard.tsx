@@ -6,9 +6,7 @@ type ProjectCardProps = {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <article
-      key={project.id}
-      className="rounded-3xl border border-line bg-surface p-4 flex flex-col gap-4">
+    <article className="rounded-3xl border border-line bg-surface p-4 flex flex-col gap-4">
       <img
         src={project.image}
         alt={project.title}
@@ -17,20 +15,20 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       <h3 className="text-xl font-semibold font-display text-forest-dark">
         {project.title}
       </h3>
-      <p className="flex-1 text-base md:text-lg font-sans text-ink-soft">
+      <p className="text-base md:text-lg text-ink-soft">
         {project.description}
       </p>
-      <ul className="flex flex-wrap gap-2">
-        {project.tags.map((tag) => (
-          <li
-            key={tag}
-            className="rounded-full bg-forest-dark px-3 py-1 text-sm font-semibold text-surface">
-            {tag}
-          </li>
-        ))}
-      </ul>
-      <div className="flex gap-5">
-        <p>
+      <div className="mt-auto flex flex-col gap-4">
+        <ul className="flex flex-wrap gap-2">
+          {project.tags.map((tag) => (
+            <li
+              key={tag}
+              className="rounded-full bg-forest px-3 py-1 text-sm font-semibold text-surface">
+              {tag}
+            </li>
+          ))}
+        </ul>
+        <div className="flex gap-5">
           <a
             href={project.repoUrl}
             target="_blank"
@@ -38,9 +36,8 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             className="font-bold text-terracotta hover:underline">
             Repo
           </a>
-        </p>
-        {project.demoUrl && (
-          <p>
+
+          {project.demoUrl && (
             <a
               href={project.demoUrl}
               target="_blank"
@@ -48,8 +45,8 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
               className="font-bold text-terracotta hover:underline">
               Live-demo
             </a>
-          </p>
-        )}
+          )}
+        </div>
       </div>
     </article>
   )
