@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar'
-import { projects, filterTags } from './data/projects'
+import { projects } from './data/projects'
 import ProjectCard from './components/ProjectCard'
+import Filters from './components/Filters'
 import type { Filter } from './types'
 
 function App() {
-  const [selectedTag, setSelectedTag] = useState('Alla')
+  const [selectedTag, setSelectedTag] = useState<Filter>('Alla')
 
   const filteredProjects =
     selectedTag === 'Alla'
@@ -30,21 +31,7 @@ function App() {
               Välj en teknik för att filtrera.
             </span>
           </p>
-          <div className="flex flex-wrap gap-2 px-4 mb-6">
-            {filterTags.map((tag) => (
-              <button
-                key={tag}
-                aria-pressed={selectedTag === tag}
-                onClick={() => setSelectedTag(tag)}
-                className={`min-h-11 cursor-pointer rounded-full border-2 px-4 text-sm font-bold transition duration-200 hover:-translate-y-0.75 ${
-                  selectedTag === tag
-                    ? 'bg-terracotta border-terracotta text-surface'
-                    : 'border-ink text-ink hover:bg-terracotta hover:border-terracotta hover:text-surface'
-                }`}>
-                {tag}
-              </button>
-            ))}
-          </div>
+          <Filters selectedTag={selectedTag} setSelectedTag={setSelectedTag} />
           <p className="mb-6 px-4 text-base md:text-lg font-sans text-ink-soft">
             Visar {filteredProjects.length} projekt av {projects.length}
           </p>

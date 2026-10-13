@@ -1,6 +1,6 @@
 import type { Filter, Project } from '../types'
 
-export const filterTags = [
+export const filterTags: Filter[] = [
   'Alla',
   'JavaScript',
   'HTML',
