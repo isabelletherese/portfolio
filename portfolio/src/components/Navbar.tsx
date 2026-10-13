@@ -11,14 +11,13 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="bg-sand text-ink">
-      <div className="flex items-center justify-between px-5 py-4 md:px-10 lg:px-16">
+    <header className="bg-sand text-ink px-5 py-4 md:px-10 lg:px-16">
+      <div className="container-page flex items-center justify-between">
         <a
           href="/"
           className="font-display text-forest hover:text-forest-dark font-bold text-2xl lg:text-3xl">
           Isabelle Reynolds
         </a>
-
         <nav className="hidden md:flex gap-4 lg:gap-8 font-sans text-forest font-bold md:text-xl">
           {navLinks.map((link) => (
             <a
@@ -29,7 +28,6 @@ const Navbar = () => {
             </a>
           ))}
         </nav>
-
         <button
           type="button"
           aria-label={isOpen ? 'Stäng meny' : 'Öppna meny'}

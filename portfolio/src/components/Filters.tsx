@@ -8,7 +8,7 @@ type FiltersProps = {
 
 const Filters = ({ selectedTag, setSelectedTag }: FiltersProps) => {
   return (
-    <div className="flex flex-wrap gap-2 px-4 mb-6">
+    <div className="flex flex-wrap gap-2 mb-6">
       {filterTags.map((tag) => (
         <button
           type="button"

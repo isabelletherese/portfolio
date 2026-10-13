@@ -7,23 +7,23 @@ const buttonSecondary = 'bg-cream text-forest hover:bg-sand'
 
 const Hero = () => {
   return (
-    <section id="home">
-      <div className="grid gap-5 p-5 md:grid-cols-[18rem_1fr] md:items-center md:gap-10 md:p-10 lg:grid-cols-[22rem_1fr] lg:gap-16 lg:p-16 xl:grid-cols-[26rem_1fr]">
-        <div className="mx-auto w-full max-w-sm rounded-3xl bg-forest p-4 md:mx-0 md:max-w-none md:p-3 lg:p-4">
+    <section id="home" className="section-padding">
+      <div className="container-page flex flex-col gap-5 md:flex-row md:items-center md:gap-10 lg:gap-16">
+        <div className="mx-auto w-full max-w-sm rounded-3xl bg-forest p-4 md:mx-0 md:w-72 md:shrink-0 md:p-3 lg:w-80 lg:p-4 xl:w-96">
           <img
             src={portofolioPic}
             alt="Profilbild på Isabelle Reynolds"
             className="aspect-square w-full rounded-2xl object-cover object-top"
           />
         </div>
-        <div className="md:p-0 p-4">
-          <p className="text-normal font-bold text-terracotta uppercase mb-1">
+        <div className="flex-1">
+          <p className="font-bold text-terracotta uppercase mb-1">
             Hej, jag heter Isabelle
           </p>
-          <h1 className="mb-4 text-3xl font-semibold font-display text-forest lg:text-4xl xl:text-5xl">
+          <h1 className="mb-4 font-semibold font-display text-forest text-4xl xl:text-5xl">
             Frontend Developer Student på Medieinstitutet.
           </h1>
-          <p className="mb-6 max-w-2xl text-base text-ink md:text-lg lg:text-xl">
+          <p className="text-ink">
             Jag studerar frontend på Medieinstitutet. Före det arbetade jag med
             inköp och ekonomi. Jag gillar ordning, tydlighet och att få
             detaljerna rätt.
