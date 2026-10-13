@@ -2,6 +2,7 @@ import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Projects from './components/Projects'
 import About from './components/About'
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <Hero />
         <About />
         <Projects />
-        <section id="contact">Kontakt</section>
+        <Contact />
       </main>
 
       <footer>
