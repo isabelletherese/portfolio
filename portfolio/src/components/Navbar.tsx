@@ -53,7 +53,7 @@ const Navbar = () => {
             type="button"
             aria-label="Stäng meny"
             onClick={() => setIsOpen(false)}
-            className="flex size-12 items-center cursor-pointer justify-center self-end rounded-full bg-cream text-forest">
+            className="flex size-12 items-center cursor-pointer justify-center self-end rounded-full bg-sand text-forest">
             <svg
               aria-hidden="true"
               viewBox="0 0 24 24"
@@ -72,7 +72,7 @@ const Navbar = () => {
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className={`flex min-h-16 items-center rounded-2xl border border-cream px-5 ${link.highlight ? 'bg-cream text-forest' : 'text-surface'}`}>
+                className={`flex min-h-16 items-center rounded-2xl border border-sand px-5 ${link.highlight ? 'bg-sand text-forest' : 'text-sand'}`}>
                 {link.label}
               </a>
             ))}
