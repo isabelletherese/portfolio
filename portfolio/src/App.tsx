@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Navbar from './components/Navbar'
 import { projects, filterTags } from './data/projects'
 import ProjectCard from './components/ProjectCard'
+import type { Filter } from './types'
 
 function App() {
   const [selectedTag, setSelectedTag] = useState('Alla')

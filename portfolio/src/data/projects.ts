@@ -1,12 +1,4 @@
-export type Project = {
-  id: number
-  title: string
-  description: string
-  image: string
-  tags: string[]
-  repoUrl: string
-  demoUrl: string | null
-}
+import type { Filter, Project } from '../types'
 
 export const filterTags = [
   'Alla',
