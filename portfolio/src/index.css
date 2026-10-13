@@ -21,10 +21,29 @@
   html {
     scroll-behavior: smooth;
   }
-
   body {
     color: var(--color-ink);
     background-color: var(--color-cream);
     font-family: var(--font-sans);
   }
+
+  h2 {
+    @apply font-display font-semibold text-3xl mb-4 md:mb-6 lg:text-4xl;
+  }
+
+  h3 {
+    @apply text-base mb-1 md:text-base lg:text-lg;
+  }
+
+  p {
+    @apply mb-4 text-base md:text-lg lg:text-xl max-w-2xl last:mb-0;
+  }
+}
+
+@utility section-padding {
+  @apply px-5 py-10 md:px-10 md:py-14 lg:px-16 lg:py-16;
+}
+
+@utility container-page {
+  @apply mx-auto w-full max-w-6xl px-4 md:px-0;
 }
