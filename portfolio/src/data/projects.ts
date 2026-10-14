@@ -79,6 +79,6 @@ export const projects: Project[] = [
     image: portfolioImg,
     tags: ['React', 'TypeScript'],
     repoUrl: 'https://github.com/isabelletherese/portfolio',
-    demoUrl: 'https://portfolio-isabelletherese.vercel.app/',
+    demoUrl: 'https://portfolio-isabellereynolds.vercel.app/',
   },
 ]
