@@ -9,7 +9,7 @@ const Contact = () => {
           <h2>Kontakt</h2>
           <p>Söker ni en LIA-student eller vill bara säga hej? Hör av er.</p>
 
-          <ul className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <ul className="mt-6 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             <li>
               <h3 className="font-bold uppercase text-peach">E-post</h3>
               <a
