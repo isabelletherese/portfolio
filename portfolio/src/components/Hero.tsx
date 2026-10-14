@@ -24,9 +24,10 @@ const Hero = () => {
             Frontend Developer Student på Medieinstitutet.
           </h1>
           <p className="text-ink">
-            Jag studerar frontend på Medieinstitutet. Före det arbetade jag med
-            inköp och ekonomi. Jag gillar ordning, tydlighet och att få
-            detaljerna rätt.
+            Med en bakgrund inom inköp och ekonomi har jag fått med mig ett
+            strukturerat arbetssätt och ett öga för detaljer. Jag gillar att
+            lösa problem, förstå hur saker fungerar och hitta genomtänkta
+            lösningar.
           </p>
           <div className="flex flex-col gap-4 md:flex-row md:gap-6 lg:gap-8">
             <a className={`${buttonBase} ${buttonPrimary}`} href="#projects">
