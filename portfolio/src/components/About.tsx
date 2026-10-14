@@ -10,10 +10,13 @@ const About = () => {
         <div>
           <h2 className="text-surface">Om mig</h2>
           <p className="mb-2 text-surface">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            euismod, nunc ut laoreet tincidunt, nunc nisl aliquam nunc, eget
-            aliquam nisl nunc eu nunc. Sed euismod, nunc ut laoreet tincidunt,
-            nunc nisl aliquam nunc, eget aliquam nisl nunc eu nunc.
+            Det roligaste med utveckling är att få kombinera problemlösning med
+            kreativitet samt se hur en idé växer fram till en färdig produkt.
+            Jag är nyfiken på hur design och teknik samspelar och hur små
+            detaljer kan påverka användarupplevelsen. Med erfarenhet av att ta
+            ansvar, planera och hitta lösningar när saker inte går som tänkt ser
+            jag nu fram emot att fortsätta utvecklas inom webbutveckling och
+            lära mig nya saker.
           </p>
         </div>
         <div className="flex w-full flex-col gap-4 md:max-w-md lg:max-w-lg lg:justify-self-end">
