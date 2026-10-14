@@ -73,6 +73,6 @@ export const projects: Project[] = [
     image: 'https://placehold.net/600x400.png',
     tags: ['React', 'TypeScript'],
     repoUrl: 'https://github.com/isabelletherese/portfolio',
-    demoUrl: null,
+    demoUrl: 'https://portfolio-sooty-delta-6mnow2llez.vercel.app/',
   },
 ]
